@@ -1,0 +1,16 @@
+{
+  "name": "qa-playwright-practice-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "testing"
+  ],
+  "author": "Galyna Chernenko <kirsikka.gala@gmail.com>",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.4.1"
+  }
+}
