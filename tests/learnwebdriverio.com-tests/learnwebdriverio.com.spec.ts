@@ -4,7 +4,7 @@ import {
   articleThesis,
   articleBody,
   articleTags,
-} from './utils/testArticle.ts';
+} from '../utils/testArticle.ts';
 import { stringify } from 'querystring';
 
 //////////////////////////////////////////////// TestSuite /////////////////////////////////////////////////
