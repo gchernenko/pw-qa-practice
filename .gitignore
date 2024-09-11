@@ -4,4 +4,4 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /tests-old/
-/tests-example/
+/tests-examples/
