@@ -52,21 +52,21 @@ test('TS-1 equal values', async () => {
   expect(compareNumbers(0, 0)).toContain('is equal to');
 });
 
-test('TS-2 (1 > 0)', () => {
+test('TS-2 (1 > 0)', async () => {
   expect(compareNumbers(1, 0)).toContain('is greater');
 });
 
-test('TS-3 (-1 > 0)', () => {
+test('TS-3 (-1 > 0)', async () => {
   expect(compareNumbers(-1, 0)).toContain('is less');
 });
 
-test('TS-4 (max > min)', () => {
+test('TS-4 (max > min)', async () => {
   expect(
     compareNumbers(1.7976931348623157e308, -1.7976931348623157e308),
   ).toContain('is greater');
 });
 
-test('TS-5 (equal max values)', () => {
+test('TS-5 (equal max values)', async () => {
   expect(
     compareNumbers(1.7976931348623157e308, 1.7976931348623157e308),
   ).toContain('is equal');
