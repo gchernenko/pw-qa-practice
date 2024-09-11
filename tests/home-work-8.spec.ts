@@ -1,22 +1,17 @@
 import { test, expect } from '@playwright/test';
-let result: string;
 
-function defineEvenNumbers(val: number) {
-  val % 2 === 0
-    ? (result = `${val} is even number`)
-    : (result = `${val} is odd number`);
-  return result;
+function defineEvenNumbers(val: number): string {
+  return val % 2 === 0 ? `${val} is even number` : `${val} is odd number`;
 }
 
-function compareNumbers(val1: number, val2: number) {
+function compareNumbers(val1: number, val2: number): string {
   if (val1 !== val2) {
-    val1 > val2
-      ? (result = `${val1} is greater than ${val2}`)
-      : (result = `${val1} is less than ${val2}`);
+    return val1 > val2
+      ? `${val1} is greater than ${val2}`
+      : `${val1} is less than ${val2}`;
   } else {
-    result = `${val1} is equal to ${val2}`;
+    return `${val1} is equal to ${val2}`;
   }
-  return result;
 }
 
 // Pos/neg: positive, negative, zero
